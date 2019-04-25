@@ -16,7 +16,7 @@ export class DocumentComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this._docSub = this.documentService.currentDocument.pipe(
-      startWith({ id: '', doc: 'Select an existing document or create a new one to get started'})
+      startWith({ id: '', doc: 'Selecione um documento existente ou crie um novo para começar'})
     ).subscribe(document => this.document = document);
   }
 
